@@ -3,3 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --primary-black: black;
+  --primary-cream: rgb(245, 212, 146);
+  --primary-dark: rgb(255,255,255,0);
+}
+
+/*------------------------------Navbar- ---------------------------------*/
+.logo{
+  height: 2.125rem;
+  width: 2.125rem;
+}
+.LB{
+  font-family: 'Courier New', monospace;
+  font-size: 10pt;
+  font-weight: italic;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+}
+
+/*------------------------------Menu link - ---------------------------------*/
+
+nav a.nav-link{
+  font-weight: 1000;
+  letter-spacing: 0.038rem;
+  cursor: pointer; 
+}
+nav ul li{
+  text-transform: uppercase;
+  font-family: 'Courier New', monospace;
+}
+.navbar-nav > li > a{
+  color: var(--primary-black) !important;
+  border-bottom: 0.1875 solid var(--primary-dark);
+}
+.navbar-nav > li > a:focus{
+  border-bottom: 0.1875rem solid var(--primary-cream);
+}
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1875rem solid var(--primary-cream);
+}
