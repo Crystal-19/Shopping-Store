@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import Navbar from "./components/Home/Navbar";
 import Home from "./components/Home/Home";
 import Header from "./components/Home/Header";
 import BestSeller from "./components/Home/BestSeller";
 import Process from "./components/Home/Process";
 import Team from "./components/Home/Team";
-import Brand from "./components/Home/Brand";
+// import Brand from "./components/Home/Brand";
 import Contact from "./components/Home/Contact";
 import Catalog from "./components/Catalog/Catalog";
 import CatalogFilter from "./components/Catalog/CatalogFilter";
@@ -124,7 +124,6 @@ function App() {
         Header={Header}
         BestSeller={BestSeller}
         Process={Process}
-        Brand={Brand}
         Team={Team}
         Contact={Contact}
         toggle={toggle}

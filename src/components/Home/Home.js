@@ -9,7 +9,6 @@ const Home = ( { Header, BestSeller, Brand, Team, Contact, toggle, Process, togg
             />
             <Process />
             <Team />
-            <Brand />
             <Contact />
             <Services />
         </div>

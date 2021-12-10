@@ -35,7 +35,7 @@ const Header  = () => {
                     }
                             }}
                 />
-            <p>Design</p>
+            <p> Design </p>
             <a href="#contact" className="btn1">Contact Us</a>
         </div>
     );

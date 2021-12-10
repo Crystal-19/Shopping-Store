@@ -5,7 +5,7 @@ const CatalogFilter = ({colorHandler, priceHandler}) => {
     
 
     return(
-    <div className="filter-container pt-3 pb-5">
+    <div className="filter-container pt-3">
         <div className="col-lg-6 ms-4">
             <div className="title titleFormat ps-2 py-2"> Catagories </div>
             <ul className="list-group">
@@ -35,7 +35,7 @@ const CatalogFilter = ({colorHandler, priceHandler}) => {
                 <option>Silver</option>
             </select>
         </div>
-        <div className="col-lg-6 py-5 ms-4">
+        <div className="col-lg-6 pt-5 ms-4">
             <select onChange={(pr) => priceHandler(pr.target.value)} className="titleFormat">
                 <option> Shop by price </option>
                 <option> Low </option>

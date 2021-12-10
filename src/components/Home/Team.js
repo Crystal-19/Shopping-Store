@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 import React from 'react';
 import mb1 from "../member1.png";
 import mb2 from "../member2.jpeg";
@@ -118,15 +119,15 @@ const Team = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row py-5 text-center">
+                <div className="row py-5 text-center mission">
                     <div className="col-lg-4">
-                        <h1 style={{background: 'linear-gradient(90deg, #00d7c8, #9e4eff, #ff21bd, #ff6633)', color: 'var(--primary-white)'}}> 2021 </h1>
+                        <h1 className='mission' style={{background: 'linear-gradient(90deg, #00d7c8, #9e4eff, #ff21bd, #ff6633)', color: 'var(--primary-white)'}}> 2021 </h1>
                         <h5> Since We Start </h5>
                     </div>
-                    <div className="col-lg-4"> Our team's mission to bring the most 
+                    <div className="mission col-lg-4"> Our team's mission to bring the most 
                         professional services for your business.
                     </div>
-                    <div className="col-lg-4">
+                    <div className="mission col-lg-4">
                         <h1 className='clientnum'></h1>
                         <h5> Our Clients </h5>
                     </div>

@@ -8,7 +8,7 @@ const Catalog = ( { CatalogFilter, CatalogProduct, toggle,
     checkBox, setCheckBox, filteredColor, setFilteredColor, 
     getFilteredColor, Filter, setFilter, colorHandler, priceHandler, searchHandler } ) => {
     return (
-        <div className={toggle === 2 || toggle === 5 ? 'active-content' : 'deactive-content'}>
+        <div className={toggle === 2 ? 'active-content' : 'deactive-content'}>
             {showCart ? 
             <CartDetail 
                 OrderDetail={OrderDetail}

@@ -9,15 +9,15 @@ import twt from "../tw.jpeg";
 const Services = () => {
     return (
         <section style={{background: 'var(--primary-gray-dark)'}}>
-            <div className="row py-5 m-auto">
-                <div style={{color:'var(--primary-white)'}} className="col-lg-3 ms-5">
-                    <img src={logo} alt="logo" style={{height:'6rem', width:'6rem'}} className='py-2' />
+            <div className="row pb-2 pt-5 m-auto Svs">
+                <div style={{color:'var(--primary-white)'}} className="service-col col-lg-3 ">
+                    <img src={logo} alt="logo" style={{height:'6rem', width:'6rem'}} className='img-lg py-2' />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Molestiae quas vel sint commodi repudiandae consequuntur.
                     </p>
                     <div className="d-flex flex-row align-items-center py-3">
-                        <img style={{height:'3.5rem', width:'3.5rem'}} src={phone} alt="phone" />
-                        <p> +84 932062297</p>
+                        <img id='phone' src={phone} alt="phone" />
+                        <p id='phonenum'> +84 932062297</p>
                     </div>
                     <div className="d-flex flex-row justify-content-start align-items-center">
                         <a href="#fb">
@@ -34,20 +34,20 @@ const Services = () => {
                         </a>
                     </div>
                 </div>
-                <div style={{color:'var(--primary-white)'}} className="col-lg-3 d-flex flex-column">
-                    <p style={{fontSize:'30pt', color:'var(--primary-white)'}}> Our Services </p>
+                <div style={{color:'var(--primary-white)'}} className="service-col col-lg-3 d-flex flex-column">
+                    <p className='title-size' style={{color:'var(--primary-white)'}}> Our Services </p>
                     <p className='fa'> &#xf101; Home </p>
                     <p className='fa'> &#xf101; Services </p>
                     <p className='fa'> &#xf101; Team </p>
                     <p className='fa'> &#xf101; About Us </p>
                     <p className='fa'> &#xf101; Contact </p>
                 </div>
-                <div style={{color:'var(--primary-white)'}} className="col-lg-3">
-                    <p style={{fontSize:'30pt'}}> Business Hours </p>
+                <div style={{color:'var(--primary-white)'}} className="service-col col-lg-3">
+                    <p className='title-size'> Business Hours </p>
                     <p>Our support available to help you 24 hours a day, seven days week</p>
-                    <p> Monday-Saturday:  ------------ 8am-6pm</p>
-                    <p>Friday:  ------------ 09am-9pm</p>
-                    <p>Sunday:  ------------ 09am-8pm</p>
+                    <p className='workingtime'> Monday-Saturday:  ------------ 8am-6pm</p>
+                    <p className='workingtime'>Friday:  ------------ 09am-9pm</p>
+                    <p className='workingtime'>Sunday:  ------------ 09am-8pm</p>
                 </div>
             </div>
         </section>

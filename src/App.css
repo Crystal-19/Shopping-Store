@@ -119,8 +119,9 @@ nav ul li{
   border: 0.063rem solid var(--primary-pink);
   text-transform: uppercase;
   border-radius: 1.25rem;
+  position: absolute;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem !important;
-  margin: 35rem 40.265rem 35rem 40.265rem;
+  margin: 40rem 35rem 10rem 35rem;
   width: 9.375rem;
   background: var(--primary-pink);
   color: var(--primary-white);
@@ -136,21 +137,9 @@ nav ul li{
 }
 
 .tsparticles-canvas-el{
-   position: absolute;
    height: 95vh;
    width: 100vw;
    z-index: 2;
-}
-@media(max-width: 768px){
-  .main-info{
-    align-items: center !important;
-  }
-  .typed-text{
-    font-size: 2.8rem !important;
-  }
-  .header-wraper p{
-    font-size: 5rem !important;
-  }
 }
 
 /*------------------------------Best Seller - ---------------------------------*/
@@ -190,6 +179,13 @@ transition: 0.5s;
 }
 
 /*---------------------------Process------------------------------*/
+.protitle{
+  display: flex; 
+  justify-content: center;
+  padding: 3rem 0;
+  color: var(--primary-white);
+  font-size: 40pt;
+}
 .pronum{
   height: 5rem;
   width: 5rem;
@@ -214,7 +210,25 @@ transition: 0.5s;
   font-size: 14pt;
   font-weight: bold;
 }
+.pronumContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 3rem;
+  flex-direction: row;
+  text-align: center;
+  width: 80%;
+}
 
+.protextContainer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  margin: auto;
+  width: 80%;
+}
 /*---------------------------team------------------------------*/
 .team{
   background: var(--primary-white);
@@ -362,6 +376,11 @@ transition: 0.5s;
   font-weight: 400;
   font-family: serif;
 }
+.btn2Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .submitBtn{
   background: linear-gradient(90deg, #00d7c8, #9e4eff, #ff21bd, #ff6633);
   text-decoration: none;
@@ -378,8 +397,41 @@ transition: 0.5s;
   color: var(--primary-black);
   text-decoration: none;
 }
-
+.infocontainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  width: 100%;
+}
+.socime{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  background: var(--primary-white);
+}
+/*------------------------------Services------------------------------------*/
+.Svs{
+  display: flex;
+  justify-content:center;
+}
+.title-size{
+  font-size: 30pt;
+}
+#phone{
+  height: 3.5rem;
+  width: 3.5rem;
+}
 /*---------------------------catalog------------------------------*/
+.catalogContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .filter-container{
   display: flex;
   flex-direction: column;
@@ -544,3 +596,348 @@ transition: 0.5s;
   text-decoration: none;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem !important;
 }
+
+/*------------------------------Responsive------------------------------------*/
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
+  .btn1{
+    width: 7rem !important;
+    height: 3rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8pt;
+    margin: 30rem 10rem 20rem 10rem !important;
+    padding: 0 !important;
+  } */
+/*------------------------------Process------------------------------------*/
+/* .protitle{
+  display: flex; 
+  justify-content: center;
+  padding: 3rem 0;
+  color: var(--primary-white);
+  font-size: 30pt;
+}
+.pronum{
+  height: 2rem;
+  width: 5rem;
+  border-radius: 100%;
+  border: solid 0.1rem  var(--primary-white);
+  background: var(--primary-dark-gray);
+  color: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.pronumContainer{
+  padding-bottom: 1rem;
+}
+#fz{
+  font-size: 10pt;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90% !important;
+}
+.protextContainer > p{
+  font-size: 7pt !important;
+} */
+/*------------------------------Brand------------------------------------*/
+/* .carousel-item > .row {
+  display: flex;
+  justify-content: space-around !important;
+  height: 5rem;
+  width: 25rem;
+}
+.logo-b{
+  height: 4rem;
+  width: 1.5rem;
+}
+.socime{
+  height: 3rem !important;
+  width: 3rem !important;
+  font-size: 3pt;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding-top: 1.5rem !important;
+}
+.infocontainer{
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding-bottom: 0 !important;
+  width: 100%;
+  height: 3rem;
+}
+/*---------------------------contact------------------------------*/
+/* .socime{
+  height: 3rem !important;
+  width: 3rem !important;
+  font-size: 3pt;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding-top: 1.5rem !important;
+}
+.infocontainer{
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding-bottom: 0 !important;
+  width: 100%;
+  height: 3rem;
+}  */
+/*---------------------------services------------------------------*/
+/* .Svs .ms-5{
+  margin-left: 0.5rem !important;
+} */
+
+/*---------------------------catalog------------------------------*/
+/* .filter-container.pt-3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rem;
+  height: 30rem;
+}
+.card.border-0.bg-light.mb-3 > .card-body > .img-fluid{
+  height: 10rem; 
+  width: 10rem;
+}
+
+} */
+
+/*---------------------------Responsive------------------------------*/
+/*---------------------------Tablet------------------------------*/
+@media (min-width: 740px) and (max-width: 1023px){
+  /*-----Header---------*/
+  .main-info{
+    align-items: center !important;
+  }
+  .typed-text{
+    font-size: 4.5rem !important;
+  }
+  .header-wraper p{
+    font-size: 10rem;
+    margin: 20rem 31.25rem 10rem 31.25rem;
+  }
+
+  /*-----Best seller---------*/
+  .row>*{
+    width: 50% !important;
+  }
+
+  /*-----Process---------*/
+  .pronum{
+    height: 3rem;
+  }
+  #fz{
+    width: 88% !important;
+  }
+  .protextContainer{
+    width: 88%;
+  }
+  /*-----Team---------*/
+  .mission{
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+  } 
+  /*-----contact---------*/
+  .contact-responsive{
+    width: 90% !important;
+  }
+  .btn2Container{
+    width: 40rem !important;
+    display: flex ! important;
+    justify-content: center !important;
+  }
+  .submitBtn{
+  background: linear-gradient(90deg, #00d7c8, #9e4eff, #ff21bd, #ff6633);
+  text-decoration: none;
+  height: 3rem !important; 
+  width: 10rem !important;
+  border-radius: 1.25rem;
+  color: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .socime p{
+    font-size: 10pt;
+  }
+/*------------------------------Services------------------------------------*/
+  .Svs{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+  }
+  .service-col{
+    max-width: 30% !important;
+  }
+  .title-size{
+    font-size: 25pt;
+  }
+  #phone{
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+}
+
+/*---------------------------Mobile------------------------------*/
+@media (max-width: 740px){
+  /*-----Header---------*/
+  .main-info{
+    align-items: center !important;
+  }
+  .typed-text{
+    font-size: 2.5rem !important;
+  }
+  .header-wraper p{
+    font-size: 6rem;
+    margin: 10rem 3rem 10rem 3rem;
+  }
+  .btn1{
+    border: 0.063rem solid var(--primary-pink);
+    text-transform: uppercase;
+    border-radius: 1.25rem;
+    position: absolute;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem !important;
+    margin: 30rem 3rem 10rem 3rem;
+    width: 9.375rem;
+    background: var(--primary-pink);
+    color: var(--primary-white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*-----Best seller---------*/
+  .row>*{
+    width: 50% !important;
+  }
+  /*-----Process---------*/
+  .protitle{
+    font-size: 25pt;
+  }
+  .protextContainer{
+    margin: 0 !important;
+  }
+  .pronum{
+    height: 2.5rem;
+    width: 9rem;
+  }
+  #fz{
+    width: 88% !important;
+    font-size: 10pt;
+  }
+  .protextContainer{
+    display: none;
+  }
+  /*-----Team---------*/
+  .mission{
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+  }
+
+  
+
+  h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+  } 
+  .img-mb {
+    width: 9rem !important;
+    height: 9rem !important;
+  }
+  .member-container {
+    width: 12rem;
+    height: 12rem;
+  }
+  .hide-ct{
+    width: 10rem !important;
+  }
+  /*-----contact---------*/
+  .contact-responsive{
+    width: 100% !important;
+  }
+  .btn2Container{
+    width: 100% !important;
+    display: flex ! important;
+    justify-content: center !important;
+  }
+  .submitBtn{
+  background: linear-gradient(90deg, #00d7c8, #9e4eff, #ff21bd, #ff6633);
+  text-decoration: none;
+  height: 3rem !important; 
+  width: 10rem !important;
+  border-radius: 1.25rem;
+  color: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .socime p{
+    font-size: 6pt;
+  }
+  .socime{
+    height: 4rem ! important;
+    display: flex;
+    justify-content: center ! important;
+    align-items: center ! important;
+  }
+  /*------------------------------Services------------------------------------*/
+  .Svs{
+    display: flex;
+    justify-content:center;
+    font-size: 11pt;
+    flex-direction: row;
+  }
+  .service-col{
+    max-width: 30% !important;
+  }
+  .img-lg{
+    height: 4rem ! important;
+    width: 4rem !important;
+  }
+  .title-size{
+    font-size: 16pt;
+  }
+  #phone{
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .workingtime{
+    font-size: 8pt;
+  }
+  #phonenum{
+    font-size: 6pt !important;
+  }
+}
+
+
+
+
+
+
